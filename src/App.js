@@ -12,7 +12,6 @@ function App() {
     const newJobs = await response.json()
     setJobs(newJobs)
     setLoading(false)
-    console.log(newJobs)
   }
 
   useEffect(() => fetchJobs(), [])
